@@ -10,7 +10,7 @@ const store = require('./storage/store');
 // configuration
 var app = express();
 var storeObj = new store.Store();
-var scrapeTarget = "Hamburg";
+var scrapeTarget = "Nürnberg";
 var scraperInstance = new scraper.ImmoscoutScraper(scrapeTarget, storeObj);
 
 app.use(bodyParser.urlencoded({'extended':'true'}));
